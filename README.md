@@ -1,4 +1,4 @@
-# scGenesElite
+# Bioinn
 
 - [Shiny app for exploration of single Cell data](#shiny-app-for-identification-of-single-cell-biomarkers)
   - [Introduction](#introduction)
@@ -8,7 +8,7 @@
   - [KEGG maps](#kegg-maps)
   - [Graph analysis](#graph-analysis)
 
-This is a web-based R/shiny application designed for processing and feature selection of RNA-seq and/or scRNA-seq data. It offers a range of reliable and advanced feature selection algorithms, along with frequently used visualization tools, making it a comprehensive platform. scGenesElite simplifies the handling of single-cell data, providing researchers with a user-friendly and intuitive interface.
+This is a web-based R/shiny application designed for processing and feature selection of RNA-seq and/or scRNA-seq data. It offers a range of reliable and advanced feature selection algorithms, along with frequently used visualization tools, making it a comprehensive platform. Bioinn simplifies the handling of single-cell data, providing researchers with a user-friendly and intuitive interface.
 
 ### Introduction
 
