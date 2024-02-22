@@ -112,7 +112,7 @@ ui <- # fluidPage(div(class = "tab-content",
     ),
     # App title ----
     tabPanel(
-      title = tags$img(src = "bioinn_logo.png", width = "180px", height = "75px"),
+      title = tags$img(src = "bioinn_logo.png", width = "75px", height = "75px"),
       sidebarLayout(
         position = "right",
         # sidebarPanel(
