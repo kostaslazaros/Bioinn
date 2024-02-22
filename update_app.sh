@@ -14,7 +14,7 @@ if ! git diff --quiet origin/master; then
   docker stop elite
 
   # Start a new Docker container
-  docker run -d --rm --name elite -p 8447:3838 scgenes
+  docker run -d --rm --name elite -p 80:3838 scgenes
   
   # remove the old image
   docker image prune -f
