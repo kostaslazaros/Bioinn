@@ -12,7 +12,7 @@ This is a web-based R/shiny application designed for processing and feature sele
 
 ## Running the app
 
-Simply click the [link](http://212.227.75.194:8447/).
+Simply click the [link](http://212.227.75.194).
 
 ### Introduction
 
