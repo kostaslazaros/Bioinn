@@ -977,65 +977,65 @@ we utilize the Seurat package for data normalization, a crucial step in single-c
     )
     
     ,
-    # -----------   KEGG Tab
-    tabPanel(
-      tags$h3("KEGG Maps"),
-      value = 1,
-      dropMenu(
-        dropdownButton(
-          "Info",
-          status = 'info',
-          size = "xs",
-          icon = icon('info')
-        ),
-        h3(strong('Information')),
-        br(),
-        h5(
-          'In this tab, the user is presented with the capability to visualize the KEGG Pathway Maps, which provide a holistic understanding of the functional and structural aspects of the biological system under investigation. This is achieved by mapping the isolated genes onto the KEGG Pathway Maps. The user is provided with a data frame containing the pathway identifiers, and can simply copy the desired identifier and press the "go" button to initiate the visualization process. It is important to note that the correct organism must be selected in the first tab prior to utilizing this feature, as the KEGG Pathway Maps are organism-specific.'
-        ),
-        
-        
-        
-        
-        
-        placement = "bottom-start",
-        arrow = TRUE,
-        theme = "material",
-        maxWidth = 1000
-      ),
-      # -----------   sidebarLayout
-      sidebarLayout(
-        # -------------- sidebarPanel
-        sidebarPanel(
-          h5("Give ID of KEGG pathways. ⚠ Don't forget to choose the right Organismus !!!"),
-          textInput("inText", "Pathway iD"),
-          column(
-            1,
-            offset = 2,
-            actionButton("click2", "  Go  ",
-                         style = "position: absolute; right: -130px; bottom: -72px")
-          ),
-        ),
-        
-        # Main panel for displaying outputs ----
-        mainPanel(
-          dataTableOutput("KEGG"),
-          textOutput ("text1"),
-          
-          sidebarPanel(
-            position = "left",
-            width = 12,
-            
-            
-            plotOutput("KEGGmap", width = "100%",height = 1000) ,#, width = "100%", height = 500
-            
-            
-          )
-        )
-        
-        
-      )
-    ),
+#     # -----------   KEGG Tab
+#     tabPanel(
+#       tags$h3("KEGG Maps"),
+#       value = 1,
+#       dropMenu(
+#         dropdownButton(
+#           "Info",
+#           status = 'info',
+#           size = "xs",
+#           icon = icon('info')
+#         ),
+#         h3(strong('Information')),
+#         br(),
+#         h5(
+#           'In this tab, the user is presented with the capability to visualize the KEGG Pathway Maps, which provide a holistic understanding of the functional and structural aspects of the biological system under investigation. This is achieved by mapping the isolated genes onto the KEGG Pathway Maps. The user is provided with a data frame containing the pathway identifiers, and can simply copy the desired identifier and press the "go" button to initiate the visualization process. It is important to note that the correct organism must be selected in the first tab prior to utilizing this feature, as the KEGG Pathway Maps are organism-specific.'
+#         ),
+#
+#
+#
+#
+#
+#         placement = "bottom-start",
+#         arrow = TRUE,
+#         theme = "material",
+#         maxWidth = 1000
+#       ),
+#       # -----------   sidebarLayout
+#       sidebarLayout(
+#         # -------------- sidebarPanel
+#         sidebarPanel(
+#           h5("Give ID of KEGG pathways. ⚠ Don't forget to choose the right Organismus !!!"),
+#           textInput("inText", "Pathway iD"),
+#           column(
+#             1,
+#             offset = 2,
+#             actionButton("click2", "  Go  ",
+#                          style = "position: absolute; right: -130px; bottom: -72px")
+#           ),
+#         ),
+#
+#         # Main panel for displaying outputs ----
+#         mainPanel(
+#           dataTableOutput("KEGG"),
+#           textOutput ("text1"),
+#
+#           sidebarPanel(
+#             position = "left",
+#             width = 12,
+#
+#
+#             plotOutput("KEGGmap", width = "100%",height = 1000) ,#, width = "100%", height = 500
+#
+#
+#           )
+#         )
+#
+#
+#       )
+#     ),
     
     # ----- Graphs Network Tab
     tabPanel(
